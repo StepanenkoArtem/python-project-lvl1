@@ -1,0 +1,9 @@
+setup.py
+brain_games/__init__.py
+brain_games/scripts/__init__.py
+brain_games/scripts/brain_games.py
+stepanenkoartem_brain_games.egg-info/PKG-INFO
+stepanenkoartem_brain_games.egg-info/SOURCES.txt
+stepanenkoartem_brain_games.egg-info/dependency_links.txt
+stepanenkoartem_brain_games.egg-info/entry_points.txt
+stepanenkoartem_brain_games.egg-info/top_level.txt
