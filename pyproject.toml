@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stepanenkoartem_brain_games"
-version = "0.1.7-3"
+version = "0.1.7-7"
 description = "First Hexlet Python Project"
 authors = ["Artem Stepanenko <artem.stepanenko.ks.ua@gmail.com>"]
 
@@ -16,8 +16,7 @@ prompt = "^0.4.1"
 
 [[tool.poetry.source]]
 name = "stepanenkoartem-brain-games"
-url = "https://test.pypi.org/legacy/"
-default = true
+url = "https://test.pypi.org/simple/"
 
 [tool.poetry.scripts]
   brain-games = "brain_games.scripts.brain_games:main"
