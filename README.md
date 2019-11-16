@@ -6,7 +6,7 @@ or
 
 /asciinemas/brain-games-install.cast
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/28cc9f2a226aa8057a0d/maintainability)](https://codeclimate.com/github/naveuz/project-lvl1-s98/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/28cc9f2a226aa8057a0d/test_coverage)](https://codeclimate.com/github/naveuz/project-lvl1-s98/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/303b259edc23f465938e/maintainability)](https://codeclimate.com/github/StepanenkoArtem/python-project-lvl1/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/303b259edc23f465938e/test_coverage)](https://codeclimate.com/github/StepanenkoArtem/python-project-lvl1/test_coverage)
 
 
