@@ -9,4 +9,5 @@ build:
 publish:
 	poetry publish -r testPyPI
 
-
+lint:
+	poetry run flake8 brain_games
