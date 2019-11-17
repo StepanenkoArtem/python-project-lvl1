@@ -1,8 +1,9 @@
 language: python
 python: 
-	- "3.6"
+    - "3.6"
 	- "3.7"
 insall: 
-	- pip m -install poetry
+    - pip m -install poetry
 script:
-	- make lint
+    - make lint
+
