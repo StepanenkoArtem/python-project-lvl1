@@ -3,7 +3,7 @@ python:
     - "3.6"
     - "3.7"
 install:
-    - pip m -install poetry
+    - pip install -m poetry
 script:
     - make lint
 
