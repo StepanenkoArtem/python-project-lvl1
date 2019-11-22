@@ -1,7 +1,7 @@
-import cli
+import brain_games.cli
 
 
-cli.greeting()
+brain_games.cli.greeting()
 
 
 def run():
