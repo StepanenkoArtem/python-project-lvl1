@@ -1,4 +1,4 @@
-from brain_games.even_settings import *
+from brain_games.even_settings import RANGE, MIN_CORRECT_ANSWERS, GAME_TASK
 import brain_games.cli as cli
 import random
 

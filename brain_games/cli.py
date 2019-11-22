@@ -4,6 +4,7 @@ import prompt
 def greeting():
     print('Welcome to Brain Games!')
 
+
 def ask_name():
     name = prompt.string("May I have your name?: ")
     print("Hello, {}\n".format(name))
@@ -15,7 +16,9 @@ def correct():
 
 
 def incorrect():
-    print("'yes' is wrong answer ;(.Correct answer was 'no'.\n Let's try again, Bill!'")
+    print("'yes' is wrong answer ;(.Correct answer was 'no'.\n "
+          "Let's try again, Bill!'")
+
 
 def get_answer(number):
     print("Question: {}".format(number))
@@ -26,6 +29,7 @@ def get_answer(number):
         return False
     else:
         return None
+
 
 def congratulations(name):
     print("Great game, {}!".format(name))

@@ -1,10 +1,9 @@
 # Hexlet First Project (1)
-asciinema cast avaliable on
+asciinema for Task #1
 [![asciicast](https://asciinema.org/a/280707.svg)](https://asciinema.org/a/280707)
 
-or
-
-/asciinemas/brain-games-install.cast
+asciinema for Task #4
+[![asciicast](https://asciinema.org/a/fRpK3JalOAP5OIv2dsJsSmHvp.svg)](https://asciinema.org/a/fRpK3JalOAP5OIv2dsJsSmHvp)
 
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/303b259edc23f465938e/maintainability)](https://codeclimate.com/github/StepanenkoArtem/python-project-lvl1/maintainability)
