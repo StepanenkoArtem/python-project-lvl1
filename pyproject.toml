@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stepanenkoartem_brain_games"
-version = "0.1.7-7"
+version = "0.1.8-1"
 description = "First Hexlet Python Project"
 authors = ["Artem Stepanenko <artem.stepanenko.ks.ua@gmail.com>"]
 
