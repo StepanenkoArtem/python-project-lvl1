@@ -1,35 +1,23 @@
 import prompt
+from brain_games.even_settings import CORRECT, INCORRECT
 
 
-def greeting():
-    print('Welcome to Brain Games!')
+def show_message(message):
+    print(message)
 
 
-def ask_name():
-    name = prompt.string("May I have your name?: ")
-    print("Hello, {}\n".format(name))
-    return name
+def ask_user_name():
+    return prompt.string("May I have your name?: ")
 
 
-def correct():
-    print("Correct!")
-
-
-def incorrect():
-    print("'yes' is wrong answer ;(.Correct answer was 'no'.\n "
-          "Let's try again, Bill!'")
-
-
-def get_answer(number):
-    print("Question: {}".format(number))
-    answer = prompt.string("Is it even (yes/no):").lower()
-    if answer == 'yes':
-        return True
-    elif answer == 'no':
-        return False
+def set_responce(user_answer, correct_answer, user_name):
+    if user_answer == correct_answer:
+        print(CORRECT)
     else:
-        return None
+        print(INCORRECT.format(user_answer, correct_answer, user_name))
 
 
-def congratulations(name):
-    print("Great game, {}!".format(name))
+def get_answer(question):
+    print("Question: {}".format(question))
+    return prompt.string("Your answer:")
+
