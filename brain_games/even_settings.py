@@ -1,4 +1,5 @@
-INCORRECT = "{} is wrong answer ;(.Correct answer was '{}'.\n Let's try again, {}!'"
+INCORRECT = "{} is wrong answer ;(.Correct answer was '{}'" \
+            ".\n Let's try again, {}!'"
 CORRECT = "Correct!"
 CONGRATS = "Congratulations,{}"
 

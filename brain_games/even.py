@@ -1,4 +1,4 @@
-from brain_games.even_settings import RANGE, MIN_CORRECT_ANSWERS, GREETINGS, CONGRATS
+import brain_games.even_settings as settings
 import brain_games.cli as cli
 import random
 
@@ -7,7 +7,7 @@ GAME_TASK = 'Answer "yes" if number even otherwise answer "no"'
 
 
 def get_random_number():
-    return random.randint(*RANGE)
+    return random.randint(*settings.RANGE)
 
 
 def is_even(number):
@@ -16,11 +16,11 @@ def is_even(number):
 
 def run():
     correct_answers = 0
-    cli.show_message(GREETINGS)
+    cli.show_message(settings.GREETINGS)
     cli.show_message(GAME_TASK)
     user_name = cli.ask_user_name()
     cli.show_message('Hello, {}'.format(user_name))
-    while correct_answers < MIN_CORRECT_ANSWERS:
+    while correct_answers < settings.MIN_CORRECT_ANSWERS:
         random_number = get_random_number()
         user_answer = cli.get_answer(random_number).lower()
         cli.set_responce(user_answer, is_even(random_number), user_name)
@@ -29,4 +29,4 @@ def run():
         else:
             exit()
 
-    cli.show_message(CONGRATS.format(user_name))
+    cli.show_message(settings.CONGRATS.format(user_name))

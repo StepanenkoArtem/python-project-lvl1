@@ -20,4 +20,3 @@ def set_responce(user_answer, correct_answer, user_name):
 def get_answer(question):
     print("Question: {}".format(question))
     return prompt.string("Your answer:")
-
