@@ -28,8 +28,10 @@ def run():
             correct_answers += 1
             cli.set_responce(CORRECT)
         else:
-            cli.set_responce(
-                INCORRECT.format(user_answer, is_even(random_number), user_name)
+            cli.set_responce(INCORRECT.format(
+                user_answer,
+                is_even(random_number), 
+                user_name)
             )
             exit()
 
