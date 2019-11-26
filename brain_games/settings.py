@@ -9,4 +9,4 @@ GREETINGS = "Welcome to the Brain Games!"
 MIN_CORRECT_ANSWERS = 3
 
 # Minimum and maximum of range for random integer
-RANGE = [3, 100]
+RANGE = [3, 10]
