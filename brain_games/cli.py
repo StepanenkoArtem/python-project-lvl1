@@ -1,5 +1,5 @@
 import prompt
-from brain_games.even_settings import CORRECT, INCORRECT
+from brain_games.settings import CORRECT, INCORRECT
 
 
 def show_message(message):
