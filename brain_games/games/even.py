@@ -30,7 +30,7 @@ def run():
         else:
             cli.set_responce(INCORRECT.format(
                 user_answer,
-                is_even(random_number), 
+                is_even(random_number),
                 user_name)
             )
             exit()
