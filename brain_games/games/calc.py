@@ -3,7 +3,7 @@ import brain_games.cli as cli
 import random
 
 
-GAME_TASK = "What is the result of the expression?"
+TITLE = "What is the result of the expression?"
 
 
 def summ(a, b):

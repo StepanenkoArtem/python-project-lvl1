@@ -3,7 +3,7 @@ import brain_games.cli as cli
 import random
 
 # Subtitle
-GAME_TASK = 'Answer "yes" if number even otherwise answer "no"'
+TITLE = 'Answer "yes" if number even otherwise answer "no"'
 
 
 def get_random_number():
