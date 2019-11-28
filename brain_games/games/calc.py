@@ -25,6 +25,7 @@ def task():
 
 
 def run():
+    cli.show_message(TITLE)
     correct_answers = 0
     while correct_answers < settings.MIN_CORRECT_ANSWERS:
         if cli.set_task(task()):
