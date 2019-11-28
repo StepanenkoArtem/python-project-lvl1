@@ -1,4 +1,3 @@
-from brain_games.settings import CORRECT, INCORRECT
 import brain_games.settings as settings
 import brain_games.cli as cli
 import random
