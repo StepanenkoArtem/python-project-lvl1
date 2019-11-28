@@ -15,24 +15,16 @@ def is_even(number):
     return 'yes' if not (number % 2) else 'no'
 
 
+def task():
+    random_integer = get_random_number()
+    return {"question": random_integer, "answer": is_even(random_integer)}
+
+
 def run():
     correct_answers = 0
-    cli.show_message(settings.GREETINGS)
-    cli.show_message(GAME_TASK)
-    user_name = cli.ask_user_name()
-    cli.show_message('Hello, {}'.format(user_name))
     while correct_answers < settings.MIN_CORRECT_ANSWERS:
-        random_number = get_random_number()
-        user_answer = cli.user_answer(random_number).lower()
-        if user_answer == is_even(random_number):
+        if cli.set_task(task()):
             correct_answers += 1
-            cli.set_responce(CORRECT)
         else:
-            cli.set_responce(INCORRECT.format(
-                user_answer,
-                is_even(random_number),
-                user_name)
-            )
             exit()
-
-    cli.show_message(settings.CONGRATS.format(user_name))
+    cli.congratulations()

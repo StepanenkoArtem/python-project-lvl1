@@ -19,7 +19,7 @@ def mult(a, b):
     return {'question': '{} * {}'.format(a, b), 'answer': (a * b)}
 
 
-def set_task():
+def task():
     a = random.randint(*settings.RANGE)
     b = random.randint(*settings.RANGE)
     return random.choice([summ(a, b), minus(a, b), mult(a, b)])
@@ -27,18 +27,9 @@ def set_task():
 
 def run():
     correct_answers = 0
-    cli.show_message(settings.GREETINGS)
-    print(GAME_TASK)
-    user_name = cli.ask_user_name()
     while correct_answers < settings.MIN_CORRECT_ANSWERS:
-        task = set_task()
-        user_answer = int(cli.user_answer(task['question']))
-        if user_answer == task['answer']:
+        if cli.set_task(task()):
             correct_answers += 1
-            cli.set_responce(CORRECT)
         else:
-            cli.set_responce(INCORRECT.format(user_answer,
-                                              task['answer'], user_name))
             exit()
-
-    cli.show_message(settings.CONGRATS.format(user_name))
+    cli.congratulations()
