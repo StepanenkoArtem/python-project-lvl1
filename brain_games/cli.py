@@ -38,5 +38,6 @@ def set_task(task):
                                       task['answer'], user_name))
         return False
 
+
 greetings()
 user_name = ask_user_name()
