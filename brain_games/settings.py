@@ -9,7 +9,7 @@ GREETINGS = "Welcome to the Brain Games!"
 MIN_CORRECT_ANSWERS = 3
 
 # Minimum and maximum of range for random integer
-RANGE = [1, 10]
+RANGE = [1, 30]
 
 # Progression length
 PROGR_LENGTH = 10
