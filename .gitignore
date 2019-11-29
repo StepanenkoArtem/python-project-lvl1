@@ -1,3 +1,6 @@
 /.idea/
 /venv/
 *.swp
+/dist
+*/__pycache*
+*egg*
