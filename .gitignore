@@ -2,5 +2,5 @@
 /venv/
 *.swp
 /dist
-*/__pycache*
+**/__pycache__
 *egg*
