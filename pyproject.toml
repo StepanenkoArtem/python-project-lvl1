@@ -1,15 +1,27 @@
 [tool.poetry]
 name = "stepanenkoartem-brain-games"
-version = "0.2.0"
+version = "0.2.1"
 description = "Brain-games:: Hexlet Python Project lvl-1"
 authors = ["Artem Stepanenko <artem.stepanenko.ks.ua@gmail.com>"]
+packages = [
+  {include = "brain_games"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.5"
 prompt = "^0.4.1"
+flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scritpts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
+brain-prime = "brain_prime.scripts.brain_prime:main"
+brain-gcd = "brain_gcd.scripts.brain_gcd:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+

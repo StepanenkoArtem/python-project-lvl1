@@ -1,5 +1,4 @@
 import brain_games.settings as settings
-import brain_games.cli as cli
 import random
 
 # Subtitle
@@ -14,17 +13,6 @@ def is_even(number):
     return 'yes' if not (number % 2) else 'no'
 
 
-def task():
+def even():
     random_integer = get_random_number()
     return {"question": random_integer, "answer": is_even(random_integer)}
-
-
-def run():
-    cli.show_message(TITLE)
-    correct_answers = 0
-    while correct_answers < settings.MIN_CORRECT_ANSWERS:
-        if cli.set_task(task()):
-            correct_answers += 1
-        else:
-            exit()
-    cli.congratulations()

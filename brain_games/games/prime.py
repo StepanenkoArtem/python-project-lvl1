@@ -1,4 +1,3 @@
-import brain_games.cli as cli
 import brain_games.settings as settings
 import random
 import math
@@ -21,17 +20,6 @@ def is_prime(number):
         return 'yes'
 
 
-def task():
+def prime():
     random_number = get_random_number()
     return {"question": random_number, "answer": is_prime(random_number)}
-
-
-def run():
-    cli.show_message(TITLE)
-    correct_answers = 0
-    while correct_answers < settings.MIN_CORRECT_ANSWERS:
-        if cli.set_task(task()):
-            correct_answers += 1
-        else:
-            exit()
-    cli.congratulations()

@@ -1,9 +1,8 @@
-import brain_games.cli
+import brain_games.games.game as game
 
 
 def main():
-    print('Welcome to the Brain Games! (v.0.1.7-7)')
-    brain_games.cli.run()
+    game.run()
 
 
 if __name__ == '__main__':
