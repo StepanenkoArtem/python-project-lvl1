@@ -1,4 +1,4 @@
-import brain_games.settings as settings
+from brain_games.settings import RANGE
 import random
 
 # Subtitle
@@ -6,7 +6,7 @@ TITLE = 'Answer "yes" if number even otherwise answer "no"'
 
 
 def get_random_number():
-    return random.randint(*settings.RANGE)
+    return random.randint(*RANGE)
 
 
 def is_even(number):

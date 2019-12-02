@@ -1,3 +1,2 @@
-
 def run():
-    print('Welcome to the Brain Games!')
+    print('This is the Brain-Games')
