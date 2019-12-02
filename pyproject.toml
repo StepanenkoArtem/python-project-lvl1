@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "stepanenkoartem-brain-games"
-version = "0.2.1"
+version = "0.2.2"
 description = "Brain-games:: Hexlet Python Project lvl-1"
 authors = ["Artem Stepanenko <artem.stepanenko.ks.ua@gmail.com>"]
+classifiers = [
+	"Environment :: Console",
+	"Programming Language :: Python"
+]
 packages = [
   {include = "brain_games"}
 ]
+repository = "https://github.com/StepanenkoArtem/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.5"
