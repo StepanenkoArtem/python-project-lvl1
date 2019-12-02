@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stepanenkoartem-brain-games"
-version = "0.2.2"
+version = "0.2.10"
 description = "Brain-games:: Hexlet Python Project lvl-1"
 authors = ["Artem Stepanenko <artem.stepanenko.ks.ua@gmail.com>"]
 classifiers = [
@@ -15,9 +15,9 @@ repository = "https://github.com/StepanenkoArtem/python-project-lvl1"
 [tool.poetry.dependencies]
 python = "^3.5"
 prompt = "^0.4.1"
-flake8 = "^3.7"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.7"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
@@ -26,6 +26,9 @@ brain-calc = "brain_games.scripts.brain_calc:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_prime.scripts.brain_prime:main"
 brain-gcd = "brain_gcd.scripts.brain_gcd:main"
+[[tool.poetry.source]]
+name = "testPyPi"
+url = "https://test.pypi.org/legacy/"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
