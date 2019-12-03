@@ -1,5 +1,5 @@
 # Correct answers minimum
-MIN_CORRECT_ANSWERS = 3
+MIN_CORRECT_ANSWERS = 15
 
 # Minimum and maximum of range for random integer
 MIN = 1
