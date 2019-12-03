@@ -1,4 +1,4 @@
-from brain_games.settings import RANGE
+from settings import RANGE
 import random
 
 TITLE = "Find the greatest common divisor of given numbers."

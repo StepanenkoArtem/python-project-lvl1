@@ -1,5 +1,5 @@
 import prompt
-import brain_games.settings as settings
+import settings
 
 
 def show_message(message):
@@ -16,7 +16,7 @@ def set_responce(response):
 
 def get_answer(question):
     print("Question: {}".format(question))
-    return prompt.string("Your answer:")
+    return str(prompt.string("Your answer:"))
 
 
 def congratulations(name):

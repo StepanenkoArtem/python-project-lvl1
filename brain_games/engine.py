@@ -1,24 +1,23 @@
-import brain_games.cli as cli
-import brain_games.settings as settings
-from brain_games.settings import CORRECT, INCORRECT
+import cli
+import settings
+from settings import CORRECT, INCORRECT
 
 
-def run(game, title):
+def run(generate_round):
     cli.greetings()
     user_name = cli.ask_user_name()
-    cli.show_message(title)
-    correct_answers = 0
-    while correct_answers < settings.MIN_CORRECT_ANSWERS:
-        task = game()
-        user_answer = str(cli.get_answer(task['question']))
-        if str(task['answer']) == user_answer:
+    right_answers = 0
+    while right_answers < settings.MIN_CORRECT_ANSWERS:
+        question, true_answer = generate_round.task()
+        user_answer = cli.get_answer(question)
+        if user_answer == true_answer:
             cli.set_responce(CORRECT)
-            correct_answers += 1
+            right_answers += 1
         else:
             cli.set_responce(
                 INCORRECT.format(
                     user_answer,
-                    task['answer'],
+                    true_answer,
                     user_name))
             exit()
     cli.congratulations(user_name)

@@ -20,4 +20,4 @@ def progression():
     excluded_index = random.randint(0, (len(progression_list)-1))
     excluded_item = progression_list.pop(excluded_index)
     progression_list.insert(excluded_index, " ")
-    return {'question': progression_list, 'answer': excluded_item}
+    return progression_list, excluded_item
