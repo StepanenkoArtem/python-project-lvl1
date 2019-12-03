@@ -1,4 +1,4 @@
-from brain_games import settings
+from brain_games.settings import MIN, MAX
 import random
 import math
 
@@ -6,7 +6,7 @@ TITLE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def get_random_number():
-    return random.randint(*settings.RANGE)
+    return random.randint(MIN, MAX)
 
 
 def is_prime(number):
