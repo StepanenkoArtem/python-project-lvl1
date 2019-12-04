@@ -1,4 +1,4 @@
-from settings import PROGR_LENGTH, MIN, MAX
+from brain_games.settings import PROGR_LENGTH, MIN, MAX
 import random
 
 

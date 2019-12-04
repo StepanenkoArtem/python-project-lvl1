@@ -1,6 +1,6 @@
-import cli
-from settings import MIN_CORRECT_ANSWERS
-from messages import CORRECT, INCORRECT, GREETINGS, CONGRATS
+from brain_games import cli
+from brain_games.settings import MIN_CORRECT_ANSWERS
+from brain_games.messages import CORRECT, INCORRECT, GREETINGS, CONGRATS
 
 
 def run(generate_round):

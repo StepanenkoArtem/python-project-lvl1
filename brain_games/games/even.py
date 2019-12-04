@@ -1,4 +1,4 @@
-from settings import MIN, MAX
+from brain_games.settings import MIN, MAX
 import random
 
 
