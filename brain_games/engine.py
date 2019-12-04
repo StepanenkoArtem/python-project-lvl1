@@ -21,5 +21,5 @@ def run(generate_round):
         else:
             right_answers += 1
             cli.show_message(CORRECT)
-            if right_answers == 3:
+            if right_answers == MIN_CORRECT_ANSWERS:
                 cli.show_message(CONGRATS.format(user_name))

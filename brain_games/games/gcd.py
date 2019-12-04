@@ -1,4 +1,4 @@
-from settings import RANGE
+from settings import MAX, MIN
 import random
 
 TITLE = "Find the greatest common divisor of given numbers."
@@ -13,10 +13,9 @@ def calculate_gcd(a, b):
         return a
 
 
-def gcd():
-    a = random.randint(*RANGE)
-    b = random.randint(*RANGE)
-    return {
-        'question': '{} and {}'.format(a, b),
-        'answer': calculate_gcd(a, b)
-    }
+def task():
+    a = random.randint(MIN, MAX)
+    b = random.randint(MIN, MAX)
+    question = '{} and {}'.format(a, b)
+    answer = str(calculate_gcd(a, b))
+    return question, answer

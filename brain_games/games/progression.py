@@ -1,23 +1,20 @@
-import brain_games.settings as settings
+from settings import PROGR_LENGTH, MIN, MAX
 import random
 
 
 TITLE = "What number is missing in the progression?"
 
 
-def create_progression(start, step):
-    progress = []
-    while len(progress) < settings.PROGR_LENGTH:
-        progress.append(start)
+def task():
+    answer = ''
+    question = []
+    start = random.randint(MIN, MAX)
+    step = random.randint(MIN, MAX)
+    random_index = random.randint(0, PROGR_LENGTH-1)
+    while len(question) < PROGR_LENGTH:
+        question.append(start)
+        if question.index(start) == random_index:
+            answer = str(question.pop())
+            question.append(' ')
         start = start + step
-    return progress
-
-
-def progression():
-    start = random.randint(*settings.RANGE)
-    step = random.randint(*settings.RANGE)
-    progression_list = create_progression(start, step)
-    excluded_index = random.randint(0, (len(progression_list)-1))
-    excluded_item = progression_list.pop(excluded_index)
-    progression_list.insert(excluded_index, " ")
-    return progression_list, excluded_item
+    return question, answer
